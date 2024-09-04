@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+body {
+    font-family: 'Big Shoulders Text', cursive;
+    background-color: #f3f3f3c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.menu {
+    background-color: #ff9b58;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.368);
+    padding: 5%;
+    max-width: 65%;
+    width: 100%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+h1 {
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.415);
+    color: #242424;
+    margin-bottom: 4%;
+    font-family: monospace;
+    font-size: 4vw;
+    margin-top: 2%;  
+    top: 1%; 
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu-item {
+    position: relative;
+    display: flex;
+    padding: 1%;
+    align-items: center;
+    background-color: #efefef;
+    border-radius: 3vh;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.316);
+    transition: background-color 0.3s ease;
+    margin: 1vh;
+    width: 72vh;
+    height: 30vh;
+    left: -10vh;
+}
+
+.menu-item img {
+    width: 27%;
+    height: 29vh;
+    object-fit: cover;
+    border-radius: 2vh;
+    margin-right: 4vh;
+}
+
+.menu-item h2 {
+    position: absolute;
+    top: 3vh;
+    left: 22vh;
+    margin: 0;
+    color: #f36100;
+    font-size: 3.5vh;
+    font-family: 'Big Shoulders Text', cursive;
+    z-index: 2;
+}
+  
+.menu-item.active .description {
+    display: block;
+}
+
+.menu-item p{
+    font-family: 'Big Shoulders Text', cursive;
+    text-align: justify;
+    margin-right: 2vh;
+    left: 1vh;
+    font-size: 150%;
+    font-weight: bold;
+    position: absolute;
+    top: 11vh;
+    left: 22.5vh;
+    right: 9vh;
+    color: #212121;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6600; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6600; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 50%; 
+    padding: 2vh 2vh; 
+    cursor: pointer; 
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 2.5vh; 
+    transition: background-color 0.3s ease; 
+    position: absolute; 
+    bottom: 2vh; 
+    right: 4vh; 
+    width: 6vh;
+    height: 5vh;
+}
+
+.add-to-cart:hover {
+    background-color: #cc5200; 
+    color: #e0e0e0;
+}
+
+.menu-item li {
+    position: absolute;
+    top: 9vh; 
+    left: 22.5vh; 
+    margin: 0;
+    color: #d95802;
+    font-size: 165%;
+    font-family: 'Big Shoulders Text', cursive;
+    list-style: none;
+    font-weight: 800;
+}
+
+
+section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 2vh; 
+    
+}
+
+.menu-item .g{
+    font-family: 'Big Shoulders Text', cursive;
+    text-align: justify;
+    margin-right: 2vh;
+    left: 1vh;
+    font-size: 2.3vh;
+    font-weight: bold;
+    position: absolute;
+    top: 20vh;
+    left: 22.5vh;
+    right: 2vh;
+
+}
+
+  .sobremesa a, .bebida a, .cardapio a, .voltar a {
+    font-size: 3.5vh;
+    color: #1e1d1d;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1vh 2vh;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.168);
+    margin-left: -10vh; 
+}
+
+.add-to-carts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff660000; 
+    color: #ff6600; 
+    border: none; 
+    padding: 1vh 2vh; 
+    cursor: pointer; 
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 6vh; 
+    transition: background-color 0.3s ease; 
+    position: absolute; 
+    bottom: 3vh; 
+    left: 175vh;
+    width: 30vh;
+    height: 5vh;
+    top: 5vh;
+}
+
+.add-to-carts:hover {
+    color: #cc5200; 
+}
+
+@media (max-width: 768px) {
+    .menu {
+        padding: 3%;
+    }
+
+    .menu-item {
+        width: 100%;
+        max-width: none;
+        margin: 1vh 0; /* Ajusta o espaçamento entre os itens */
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    .menu-item h2 {
+        font-size: 4vw;
+    }
+
+    .menu-item p {
+        font-size: 4vw;
+    }
+
+    .add-to-cart {
+        font-size: 3vw;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .menu-item li {
+        font-size: 4vw;
+    }
+
+    .add-to-carts {
+        font-size: 5vw;
+        width: 10vw;
+        height: 10vw;
+    }
+}
